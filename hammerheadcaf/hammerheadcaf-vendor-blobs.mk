@@ -226,6 +226,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/lge/hammerheadcaf/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libvdmengine.so:system/vendor/lib/libvdmengine.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libvdmfumo.so:system/vendor/lib/libvdmfumo.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libvss_common_core.so:system/vendor/lib/libvss_common_core.so \

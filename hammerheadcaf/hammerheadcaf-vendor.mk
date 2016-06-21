@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
 
 # Libs
 PRODUCT_PACKAGES += \
-    libmm-abl
+    libmm-abl \
+    libuiblur
 
 $(call inherit-product, vendor/lge/hammerheadcaf/hammerheadcaf-vendor-blobs.mk)
