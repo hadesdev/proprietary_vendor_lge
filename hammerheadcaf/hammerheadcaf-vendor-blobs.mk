@@ -78,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
     vendor/lge/hammerheadcaf/proprietary/lib/libxml.so:system/lib/libxml.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
-    vendor/lge/hammerheadcaf/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/lge/hammerheadcaf/proprietary/vendor/bin/vss_init:system/vendor/bin/vss_init \
     vendor/lge/hammerheadcaf/proprietary/vendor/firmware/a330_pfp.fw:system/vendor/firmware/a330_pfp.fw \
     vendor/lge/hammerheadcaf/proprietary/vendor/firmware/a330_pm4.fw:system/vendor/firmware/a330_pm4.fw \
