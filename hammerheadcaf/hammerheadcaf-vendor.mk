@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/etc/permissions/serviceitems.xml:system/etc/permissions/serviceitems.xml \
     vendor/lge/hammerheadcaf/proprietary/etc/qcril.db:system/etc/qcril.db \
     vendor/lge/hammerheadcaf/proprietary/etc/sensor_def_hh.conf:system/etc/sensor_def_hh.conf \
+    vendor/lge/hammerheadcaf/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/lge/hammerheadcaf/proprietary/framework/serviceitems.jar:system/framework/serviceitems.jar \
     vendor/lge/hammerheadcaf/proprietary/lib/hw/flp.msm8974.so:system/lib/hw/flp.msm8974.so \
     vendor/lge/hammerheadcaf/proprietary/lib/hw/gps.msm8974.so:system/lib/hw/gps.msm8974.so \
@@ -198,11 +199,17 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+
+PRODUCT_PACKAGES += \
+    qcrilmsgtunnel \
+    shutdownlistener \
+    TimeService \
+    UpdateSetting \
+    OmaDmclient \
+    SprintHiddenMenu
 PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/lge/hammerheadcaf/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/lge/hammerheadcaf/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
-    vendor/lge/hammerheadcaf/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -215,7 +222,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/lge/hammerheadcaf/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
@@ -223,7 +229,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/lge/hammerheadcaf/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/lge/hammerheadcaf/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
@@ -245,12 +250,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libmm-abl \
-    libuiblur \
-    PPPreference \
-    qcrilmsgtunnel \
-    QuickBoot \
-    shutdownlistener \
-    TimeService \
-    UpdateSetting \
-    OmaDmclient \
-    SprintHiddenMenu
+    libuiblur
